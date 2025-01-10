@@ -40,56 +40,93 @@ body {
   margin: 0 auto;
 }
 
-.mt-20{
-    margin-top: 20px;
+.mt-20 {
+  margin-top: 20px;
 }
 
-.mt-64{
-    margin-top: 64px;
+.mt-64 {
+  margin-top: 64px;
 }
 
-.section-title{
-    font-size: 32px;
-    font-weight: bold;
-    color: var(--text-black);
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text-black);
 }
 
-.btn{
-    color: white;
-    border-radius: 8px;
-    padding: 16px 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    transition: all 300ms;
+.btn {
+  color: white;
+  border-radius: 8px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 300ms;
 }
-.btn-green{
-    background-color: var(--dark-green);
-}
-.btn-green:hover{
-    background-color: red;
-}
-
-.card{
-    background-color: var(--white);
-    border: 1px solid var(--border-light);
-    border-radius: 16px;
-    padding: 19px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.btn-small {
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.card h3{
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--text-light-1);
+.btn-blue{
+    background-color: var(--border-dark-blue);
 }
 
-.card p{
-    font-size: 15px;
-    color: var(--text-light-2);
+.btn-blue:hover{
+    background-color: #366fde;
+}
+
+.btn-light-green{
+    background-color: var(--border-dark-green);
+}
+
+.btn-light-green:hover{
+    background-color: #087d4a;
+}
+
+.btn-yellow{
+    background-color: var(--dark-yellow);
+}
+
+.btn-yellow:hover{
+    background-color: #e0a726;
+}
+
+.btn-green {
+  background-color: var(--dark-green);
+}
+.btn-green:hover {
+  background-color: red;
+}
+
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-light-1);
+}
+
+.card p,
+.common-paragraph {
+  font-size: 15px;
+  color: var(--text-light-2);
+  line-height: 1.6;
 }
 
 /*header*/
@@ -119,7 +156,6 @@ nav .nav-btn {
   border-radius: 8px;
 }
 
-
 /*banner area*/
 
 .banner {
@@ -132,38 +168,76 @@ nav .nav-btn {
   gap: 50px;
 }
 
-.banner-content{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.banner-content .subtitle{
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--text-light-3);
+.banner-content .subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-light-3);
 }
 
-.banner-content .title{
-    font-size: 46px;
-    font-weight: bold;
-    color: var(--text-black);
-    max-width: 505px;
+.banner-content .title {
+  font-size: 46px;
+  font-weight: bold;
+  color: var(--text-black);
+  max-width: 505px;
 }
 
 .banner-image img {
   max-width: 440px;
 }
 
-.banner-btn{
-    margin-top: 12px;
+.banner-btn {
+  margin-top: 12px;
 }
 
 /*pillars section*/
 
-.pillars-cards{
-    margin-top: 26px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.pillars-cards {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pillars-cards .card{
+    max-width: 300px;
+    width: 100%;
+}
+
+/*vision section*/
+
+.vision-paragraph {
+  margin-block: 20px;
+}
+
+.vision-cards {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.vision-cards .card {
+  max-width: 375px;
+}
+
+.vision-cards .card .card-btn{
+    margin-top: 10px;
+}
+
+.vision-cards .card:nth-child(1) {
+  background-color: var(--bg-light-blue);
+  border: 1px solid var(--border-dark-blue);
+}
+.vision-cards .card:nth-child(2) {
+  background-color: var(--light-green);
+  border: 1px solid var(--border-dark-green);
+}
+.vision-cards .card:nth-child(3) {
+  background-color: var(--bg-light-yellow);
+  border: 1px solid var(--dark-yellow);
 }
