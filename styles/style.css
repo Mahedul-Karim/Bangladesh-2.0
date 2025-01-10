@@ -75,28 +75,28 @@ body {
   font-weight: 600;
 }
 
-.btn-blue{
-    background-color: var(--border-dark-blue);
+.btn-blue {
+  background-color: var(--border-dark-blue);
 }
 
-.btn-blue:hover{
-    background-color: #366fde;
+.btn-blue:hover {
+  background-color: #366fde;
 }
 
-.btn-light-green{
-    background-color: var(--border-dark-green);
+.btn-light-green {
+  background-color: var(--border-dark-green);
 }
 
-.btn-light-green:hover{
-    background-color: #087d4a;
+.btn-light-green:hover {
+  background-color: #087d4a;
 }
 
-.btn-yellow{
-    background-color: var(--dark-yellow);
+.btn-yellow {
+  background-color: var(--dark-yellow);
 }
 
-.btn-yellow:hover{
-    background-color: #e0a726;
+.btn-yellow:hover {
+  background-color: #e0a726;
 }
 
 .btn-green {
@@ -116,7 +116,8 @@ body {
   gap: 16px;
 }
 
-.card h3 {
+.card h3,
+.small-heading {
   font-size: 18px;
   font-weight: bold;
   color: var(--text-light-1);
@@ -204,9 +205,9 @@ nav .nav-btn {
   gap: 20px;
 }
 
-.pillars-cards .card{
-    max-width: 300px;
-    width: 100%;
+.pillars-cards .card {
+  max-width: 300px;
+  width: 100%;
 }
 
 /*vision section*/
@@ -225,8 +226,8 @@ nav .nav-btn {
   max-width: 375px;
 }
 
-.vision-cards .card .card-btn{
-    margin-top: 10px;
+.vision-cards .card .card-btn {
+  margin-top: 10px;
 }
 
 .vision-cards .card:nth-child(1) {
@@ -240,4 +241,21 @@ nav .nav-btn {
 .vision-cards .card:nth-child(3) {
   background-color: var(--bg-light-yellow);
   border: 1px solid var(--dark-yellow);
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 38px 24px;
+  background-color: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  background-image: url("../assets/quote-bg.png");
+  background-position: 15px 15px;
+  background-repeat: no-repeat;
+}
+
+.quote h2 {
+  margin-bottom: 3px;
 }
