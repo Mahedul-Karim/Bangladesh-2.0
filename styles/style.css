@@ -259,3 +259,68 @@ nav .nav-btn {
 .quote h2 {
   margin-bottom: 3px;
 }
+
+/*opinion section*/
+
+.opinion-table {
+  border-collapse: collapse;
+}
+
+.table-container {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 26px;
+  margin-top: 26px;
+}
+
+.opinion-section .opinion-table {
+  width: 100%;
+}
+
+.opinion-table thead {
+  background-color: var(--light-green);
+  border: 1px solid var(--border-light);
+}
+
+.opinion-table .table-head-1 {
+  text-align: start;
+  padding: 20px;
+}
+.opinion-table .table-head-2 {
+  text-align: right;
+  padding: 20px;
+}
+
+.opinion-table .table-head-1,
+.opinion-table .table-head-2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.opinion-table tbody td {
+  border: 1px solid var(--border-light);
+  padding: 20px 24px;
+  color: var(--text-black);
+}
+
+.td-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.td-select{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.td-select select {
+  background-color: var(--light-green);
+  border: 1px solid var(--text-black);
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black);
+  border-radius: 6px;
+  cursor: pointer;
+}
