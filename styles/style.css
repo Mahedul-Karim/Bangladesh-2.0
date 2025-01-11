@@ -160,7 +160,8 @@ input::placeholder {
   justify-content: space-between;
 }
 
-nav .nav-title {
+nav .nav-title,
+.footer-title {
   font-size: 23px;
   font-weight: bold;
   color: var(--text-black);
@@ -451,7 +452,7 @@ nav .nav-btn {
   margin-block: 14px;
 }
 
-.subscribe-input{
+.subscribe-input {
   background-color: var(--white);
   display: flex;
   justify-content: space-between;
@@ -459,16 +460,35 @@ nav .nav-btn {
   border-radius: 8px 0px 0px 8px;
 }
 
-.subscribe-input button{
+.subscribe-input button {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-.subscribe-input input{
+.subscribe-input input {
   padding: 0 40px;
   width: 100%;
 }
 
-.subscribe-input input{
+.subscribe-input input {
   font-size: 16px;
+}
+
+/*footer section*/
+
+#footer {
+  background-color: var(--white);
+  padding: 40px 230px;
+}
+
+#footer hr {
+  margin-block: 30px;
+  border-color: var(--border-light);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
