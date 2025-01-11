@@ -9,6 +9,7 @@
   --text-light-1: rgba(14, 14, 14, 0.8);
   --text-light-2: rgba(14, 14, 14, 0.7);
   --text-light-3: rgba(14, 14, 14, 0.5);
+  --text-light-4: rgba(14, 14, 14, 0.3);
 
   --dark-green: #006a50;
   --light-green: #c6e4d6;
@@ -54,7 +55,7 @@ body {
   color: var(--text-black);
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
@@ -377,6 +378,63 @@ nav .nav-btn {
   color: var(--text-light-2);
 }
 
-.news-card:nth-of-type(even) .card-image{
+.news-card:nth-of-type(even) .card-image {
   order: 2;
+}
+
+/*donation section*/
+
+.donation-section > p {
+  width: 93%;
+  margin: 20px auto;
+}
+
+.donate-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.donate-card {
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--border-light);
+  padding: 40px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.donate-card:hover {
+  background-color: var(--light-green);
+}
+
+.donate-card p {
+  font-size: 34px;
+  font-weight: bold;
+  color: var(--text-light-1);
+}
+
+.donation-input {
+  background-color: white;
+  border: 1px solid var(--border-light);
+  margin-inline: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 16px;
+}
+
+.donation-input input {
+  font-size: 18px;
+  border: none;
+}
+
+.donation-input input:focus {
+  outline: none;
+}
+
+.donation-input input::placeholder {
+  color: var(--text-light-4);
 }
