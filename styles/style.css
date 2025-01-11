@@ -135,6 +135,19 @@ body {
   line-height: 1.6;
 }
 
+input {
+  font-size: 18px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--text-light-4);
+}
+
 /*header*/
 
 #header {
@@ -426,15 +439,36 @@ nav .nav-btn {
   padding-block: 16px;
 }
 
-.donation-input input {
-  font-size: 18px;
-  border: none;
+/*newsletter section*/
+
+.newsletter-section {
+  background-color: var(--light-green);
+  border-radius: 24px;
+  padding: 60px 260px;
 }
 
-.donation-input input:focus {
-  outline: none;
+.newsletter-section > p {
+  margin-block: 14px;
 }
 
-.donation-input input::placeholder {
-  color: var(--text-light-4);
+.subscribe-input{
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.subscribe-input button{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.subscribe-input input{
+  padding: 0 40px;
+  width: 100%;
+}
+
+.subscribe-input input{
+  font-size: 16px;
 }
